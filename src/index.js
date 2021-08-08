@@ -1,2 +1,2 @@
-import simpleTamplates from './tamplates/simple.hbs';
 import './sass/main.scss';
+import './templates/card-templates.hbs';
