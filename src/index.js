@@ -1,4 +1,3 @@
-import { from } from 'form-data';
 import data from './menu.json';
 import template from './template.hbs';
 import theme from './switch-theme.js';
