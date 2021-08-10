@@ -2,8 +2,11 @@ import { refs, theme } from './refs.js';
 
 function onChangeTheme() {
   const themeChecked = refs.switch.checked;
+
+  console.log(themeChecked);
   if (themeChecked) {
     refs.body.classList.add(theme.DARK);
+
     refs.body.classList.remove(theme.LIGHT);
     localStorage.setItem('theme', theme.DARK);
   } else {
