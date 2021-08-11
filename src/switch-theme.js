@@ -3,11 +3,8 @@ import { refs, theme } from './refs.js';
 
 function onChangeTheme() {
   const themeChecked = refs.switch.checked;
-
-  console.log(themeChecked);
   if (themeChecked) {
     refs.body.classList.add(theme.DARK);
-
     refs.body.classList.remove(theme.LIGHT);
     localStorage.setItem('theme', theme.DARK);
   } else {
@@ -18,8 +15,7 @@ function onChangeTheme() {
 }
 
 function onCheckboxChecked() {
-  if (localStorage.getItem('theme') === theme.DARK);
-  {
+  if (localStorage.getItem('theme') === theme.DARK) {
     refs.body.classList.add(theme.DARK);
     refs.switch.checked = true;
   }
